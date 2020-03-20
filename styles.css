@@ -268,10 +268,25 @@ nav a:focus {
     padding: 0 .145em;
 }
 
-@media (min-width: 25rem) {
+@media (min-width: 10rem) {
+
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
+    .home-about-textbox h1 {
+        top: 1em;
+        padding: 0 .325em;
+    }
+}
+
+
+@media (min-width: 25rem) {
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
     .home-about-textbox h1 {
         top: .6em;
         padding: 0 .325em;
