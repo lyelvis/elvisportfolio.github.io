@@ -119,6 +119,24 @@ p:last-of-type {
     list-style-type: none;
 }
 
+.unstyled-list a { /* formats the link inside of our list at the bottom of the footer */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #FFF;
+}
+
+.unstyled-list li {
+    padding-bottom: 5px;
+}
+
+#unstyled-list-header { /* format the header of the list at the bottom of the page */
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+
 @media (min-width: 60rem){ /* allow us to adjust the sizing of page on media phones*/
    
    p {
@@ -300,9 +318,9 @@ nav a:focus {
 
     .home-about { 
         background-image:
-        url(img/who-we-are.jpg);
+        url(img/me3.jpg);
         background-repeat: no-repeat;
-        padding-bottom: 10em;
+        padding-bottom: 30em; /* stretches the images towards the bottom */
     }
 
     .home-about-textbox {
@@ -392,6 +410,6 @@ footer {
     background: #232323;
     color: #fff;
     text-align: left;
-    padding: 5em 0;
+    padding: 5em 0; /* first num is padding from top and bottom, second num is  */
 }
 
