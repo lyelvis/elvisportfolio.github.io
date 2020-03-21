@@ -140,7 +140,7 @@ p:last-of-type {
 @media (min-width: 60rem){ /* when it reaches this rem, the attributes will change */
    
     p {
-       font-size: 1.2 rem;
+       font-size: 1.2rem;
        line-height: 1.6;
    }
    
