@@ -27,7 +27,7 @@ img {
 section::after, 
 footer::after {
     content: '';
-    display: block;
+    display: block; /* creates a block after footer section */
     clear: both;
 }
 
@@ -49,7 +49,7 @@ footer::after {
     float: left;
 }
 
-
+/* so at 40 rem and above (40 to full screen, take these affects )*/
 @media (min-width: 40rem) {
 
     [class^=col-] {
@@ -71,7 +71,7 @@ footer::after {
     }
     
     .col-1 {
-        width: 16.66666%;
+        width: 16.66666667%;
     }
 }
 
@@ -81,13 +81,13 @@ footer::after {
 /* typography
 ************************************************* */
 h1 {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.7rem;
     margin-top: 0;
 }
 
 p {
-    margin-top: 0;
+    margin-top: 0; /* pushes the p tag down */ 
     line-height: 1.5; /* line spacing */
 }
 
@@ -132,14 +132,14 @@ p:last-of-type {
 
 #unstyled-list-header { /* format the header of the list at the bottom of the page */
     font-weight: 900;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 8px;
 }
 
 
-@media (min-width: 60rem){ /* allow us to adjust the sizing of page on media phones*/
+@media (min-width: 60rem){ /* when it reaches this rem, the attributes will change */
    
-   p {
+    p {
        font-size: 1.2 rem;
        line-height: 1.6;
    }
@@ -147,6 +147,10 @@ p:last-of-type {
    
     .title {
         font-size: 3.7rem;
+    }
+
+    #unstyled-list-header {
+        font-size: 20px;
     }
 }
 
@@ -216,12 +220,12 @@ nav ul { /* */
 
 nav li{ /* rearranges the link on the html site: home about contact, are all in a line*/
     display: inline-block;
-    margin: 1em;
+    margin: 1em; /* margin betwen the links */
 }
 
 nav a { /* sets up the clickable link */
     font-weight: 900;
-    text-decoration: none;
+    text-decoration: none; /* removes the underline on links */
     text-transform: uppercase;
     font-size: .8rem;
     padding: .5rem;
@@ -240,6 +244,10 @@ nav a:focus {
 
     nav {
         float: right;
+    }
+
+    nav a { /* when we get to 60rem, webpage makes the font size bigger*/
+        font-size: 1rem;
     }
 }
 
