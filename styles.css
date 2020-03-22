@@ -1,6 +1,9 @@
 @import
 url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
+/* Global
+***********************************************************************************************************************/
+
 * {
     box-sizing: border-box;
     transition: all ease-in-out 250ms;
@@ -19,8 +22,8 @@ img {
 
 .container {
     width: 95%; /* a width suitable to the webpage size, does not exceed it otherwise it will wrap around.*/
-    max-width: 70em;
-    margin: 0 auto; /*stopes the text from touching the side of the screen */
+    max-width: 75em; /* adjust the size of our container */
+    margin: 0 auto; /* stops the text from touching the side of the screen */
 }
 
 .clearfix::after,
@@ -33,7 +36,7 @@ footer::after {
 
 
 /* COLUMN SYSTEM
-************************************************************************/
+************************************************************************************************************************/
 /* any class that starts with col-*/
 [class^=col-] {
     width: 100%;
@@ -79,7 +82,7 @@ footer::after {
 
 
 /* typography
-************************************************* */
+******************************************************************************************************************************/
 h1 {
     font-weight: 500;
     font-size: 1.7rem;
@@ -154,7 +157,8 @@ p:last-of-type {
     }
 }
 
-/*********************** Buttons *************************************/
+/* Buttons 
+*************************************************************************************************************************************/
 .button {
     display: inline-block; /* this fixes the button display so that it does NOT merge with the text around it*/
     font-size: 1.15rem;
@@ -203,7 +207,7 @@ p:last-of-type {
 
 
 /* header
-************************************************* */
+************************************************************************************************************************************/
 
 header {
     position:  absolute; /* overlays the header "Creative inc. and the nav ul links" over the picture*/ 
@@ -223,6 +227,11 @@ nav li{ /* rearranges the link on the html site: home about contact, are all in 
     margin: 1em; /* margin betwen the links */
 }
 
+nav .current a{
+    color: #00ff6c;
+    font-weight:  bold;
+}
+
 nav a { /* sets up the clickable link */
     font-weight: 900;
     text-decoration: none; /* removes the underline on links */
@@ -234,10 +243,11 @@ nav a { /* sets up the clickable link */
 
 nav a:hover,
 nav a:focus {
-    color: #DDD;
+    color: rgb(17, 192, 177);
 }
 
-@media (min-width: 60rem){ /* allows us to adjust the sizing of our pages when loaded on different sizing screens */
+/* allows us to adjust the sizing of our pages when loaded on different sizing screens */
+@media (min-width: 60rem){ 
     .logo {
         float: left;
     }
@@ -249,10 +259,15 @@ nav a:focus {
     nav a { /* when we get to 60rem, webpage makes the font size bigger*/
         font-size: 1rem;
     }
+
+    nav .current a{
+        color: #00ff6c;
+        font-weight:  bold;
+    }
 }
 
 /* home-hero
-************************************************* */
+*******************************************************************************************************************************/
 
 .home-hero {
     background-image:
@@ -272,26 +287,26 @@ nav a:focus {
 
 
 /* home-about
-************************************************************************/
+****************************************************************************************************************************/
 .home-about-textbox {
     background-color: #232323;
-    padding: 4em;
-    width: 100vw; /* vw = viewport width*/
-    margin-left: -2.5%;
-    outline: 2px solid #00ff6c;
-    outline-offset: -2.5em;
-    color: #FFF;
-    position: relative;
+    padding: 5em; /* pads all sides of the home-about-textbox  */
+    width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
+    margin-left: -2.5%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
+    outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
+    outline-offset: -2.5em; /* positions the square nearer towards the center */
+    color: #FFF; /* changes the color of the text inside of the WHO AM I box */
+    position: relative; /* positions the ENTIRE who am i text back where it is at */
 }
 
 .home-about-textbox h1 {
     color: #00ff6c;
     position: absolute;
-    left: 50%; /*moves the far left side 50% */
+    left: 50%; /* when we are minimized, moves the "WHO AM I?" towards the middle of the page */
     transform: translateX(-50%); /*helps move the far right side 50% */
     top: .75em;
     background: #232323;
-    padding: 0 .145em;
+    padding: 0 .145em; /* 0 top and bottom, .145em left and right */
 }
 
 @media (min-width: 10rem) {
@@ -325,18 +340,17 @@ nav a:focus {
     }
 
     .home-about { 
-        background-image:
-        url(img/me3.jpg);
+        background-image: url(img/me3.jpg);
         background-repeat: no-repeat;
-        padding-bottom: 30em; /* stretches the images towards the bottom */
+        padding-bottom: 25em; /* stretches the images towards the bottom */
     }
 
     .home-about-textbox {
-        width: 50%;
-        padding: 7em;
-        outline-offset: -3.75em;
-        margin-left: -2.5%;
-        top: -5em;
+        width: 60%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        padding: 7em; /* padding between all sides */
+        outline-offset: -3.75em; /* moves the green outline */
+        margin-left: -2.5%; /* moves out entire container towards the left */
+        top: -5em; /* moves the WHO AM I text box towards the top*/
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
     }
@@ -345,13 +359,13 @@ nav a:focus {
 
     .home-about-textbox h1 {
         top: .75em;
-        left: 6rem;
+        left: 15rem; /* moves WHO AM I? text */
         transform: translateX(0)
     }
 }
 
 /* portfolio
-************************************************************************/
+***********************************************************************************************************************************/
 .portfolio { 
     margin: 3em 0 0; /*3em for the top, 0 for left and right, and 0 for the bottom*/
 }
@@ -404,7 +418,7 @@ nav a:focus {
 
 
 /* CTA
-************************************************************************/
+***************************************************************************************************************************************/
 
 .cta {
     background-color: #00ff6c;
@@ -412,7 +426,7 @@ nav a:focus {
 }
 
 /* FOOTER
-************************************************************************/
+**************************************************************************************************************************************/
 
 footer {
     background: #232323;
