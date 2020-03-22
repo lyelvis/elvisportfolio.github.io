@@ -15,6 +15,7 @@ body   {
     text-align: center;
 }
 
+/* adjust the sizing of SOME OF MY WORKS pictures */
 img {
     max-width: 100%;
     height: auto;
@@ -270,23 +271,26 @@ nav a:focus {
 *******************************************************************************************************************************/
 
 .home-hero {
-    background-image:
-    url(img/hero-bg.jpg);
+    background-image: url(img/hero-bg.jpg);
     background-size: cover;
     background-position: center;
-    padding: 10em 0;
+    padding: 10em 0; /*10em top and bottom, 0 right and left */
     color: #FFF;
 }
 
 @media (min-width: 60rem) {
     .home-hero {
-        height: 100vh;
-        padding-top: 35vh;
+        height: 100vh; /* has the background picture take up all the view port height*/
+        padding-top: 25vh; /* pushes "MAKE THINGS LOOK GREAT" towards the bottom */
+    }
+
+    .button-hero{
+        margin-top: 1.5rem; /* pushes the button "see our work" away from title */
     }
 }
 
 
-/* home-about
+/* home-about INDEX
 ****************************************************************************************************************************/
 .home-about-textbox {
     background-color: #232323;
@@ -363,6 +367,117 @@ nav a:focus {
         transform: translateX(0)
     }
 }
+
+
+
+/* home-about ABOUT PAGE
+****************************************************************************************************************************/
+.home-about-textbox-page {
+    background-color: #232323;
+    padding: 5em; /* pads all sides of the home-about-textbox  */
+    width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
+    margin-left: -3.2%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
+    outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
+    outline-offset: -3.5em; /* positions the square nearer towards the center */
+    color: #FFF; /* changes the color of the text inside of the WHO AM I box */
+    position: relative; /* positions the ENTIRE who am i text back where it is at */
+}
+
+.home-about-textbox-page h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%; /* when we are minimized, moves the "WHO AM I?" towards the middle of the page */
+    transform: translateX(-50%); /*helps move the far right side 50% */
+    top: .75em;
+    background: #232323;
+    padding: 0 .145em; /* 0 top and bottom, .145em left and right */
+}
+
+.home-about-textbox-page-2 {
+    background-color: #232323;
+    padding: 5em; /* pads all sides of the home-about-textbox  */
+    width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
+    margin-left: -3.2%; /* move black box towards the right */
+    outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
+    outline-offset: -2.5em;/* positions the square nearer towards the center */
+    color: #FFF; /* changes the color of the text inside of the WHO AM I box */
+    position: relative; /* positions the ENTIRE who am i text back where it is at */
+}
+
+.home-about-textbox-page-2 h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%; /* when we are minimized, moves the "WHO AM I?" towards the middle of the page */
+    transform: translateX(-50%); /*helps move the far right side 50% */
+    top: .75em;
+    background: #232323;
+    padding: 0 .145em; /* 0 top and bottom, .145em left and right */
+}
+
+@media (min-width: 10rem) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-about-textbox-page h1 {
+        top: 1em;
+        padding: 0 .325em;
+    }
+}
+
+
+@media (min-width: 25rem) {
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .home-about-textbox-page h1 {
+        top: .6em;
+        padding: 0 .325em;
+    }
+}
+
+@media (min-width: 60rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-about-textbox-page {
+        width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        padding: 7em; /* padding between all sides */
+        outline-offset: -3.75em; /* moves the green outline */
+        top: 0em; /* moves the entire "about me" text box towards the top*/
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+        float: right;
+    }
+
+    .home-about-textbox-page-2 {
+        width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        padding: 7em; /* padding between all sides */
+        outline-offset: -3.75em; /* moves the green outline */
+        top: 0em; /* moves the entire "about me" text box towards the top*/
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+        float: right;
+    }
+
+
+    /* moves my ABOUT ME text */ 
+    .home-about-textbox-page h1 {
+        top: .75em;
+        left: 36.5rem; /* moves WHO AM I? text */
+        transform: translateX(0)
+    }
+}
+
+
+
+
+
+
 
 /* portfolio
 ***********************************************************************************************************************************/
