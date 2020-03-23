@@ -205,6 +205,11 @@ p:last-of-type {
     color: #00ff6c;
 }
 
+ /* move the LINK TO GITHUB button */
+ .button-github{
+    margin-top: 3rem;
+}
+
 
 
 /* header
@@ -296,7 +301,7 @@ nav a:focus {
 }
 
 
-/* home-about INDEX
+/* home-about INDEX (MAIN PAGE)
 ****************************************************************************************************************************/
 .home-about-textbox {
     background-color: #232323;
