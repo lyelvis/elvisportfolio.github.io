@@ -286,7 +286,6 @@ nav a:focus {
     background-position: center;
     padding: 10em 0; /*10em top and bottom, 0 right and left */
     color: #FFF;
-    height: 100vh;
 }
 
 @media (min-width: 60rem) {
