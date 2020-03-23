@@ -300,7 +300,7 @@ nav a:focus {
 ****************************************************************************************************************************/
 .home-about-textbox {
     background-color: #232323;
-    padding: 5em; /* pads all sides of the home-about-textbox  */
+    padding: 5em; /* pads all sides of the about me content  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
     margin-left: -2.5%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
     outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
@@ -382,9 +382,9 @@ nav a:focus {
     background-color: #232323;
     padding: 5em; /* pads all sides of the home-about-textbox  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
-    margin-left: -3.2%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
+    margin-left: 0%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
     outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
-    outline-offset: -3.5em; /* positions the square nearer towards the center */
+    outline-offset: -2.5em; /* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
 }
@@ -403,7 +403,7 @@ nav a:focus {
     background-color: #232323;
     padding: 5em; /* pads all sides of the home-about-textbox  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
-    margin-left: -3.2%; /* move black box towards the right */
+    margin-left: 0%; /* move black box towards the right */
     outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
     outline-offset: -2.5em;/* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
