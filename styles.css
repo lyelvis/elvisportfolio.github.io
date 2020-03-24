@@ -288,6 +288,7 @@ nav a:focus {
     color: #FFF;
 }
 
+/* at full size! */
 @media (min-width: 60rem) {
     .home-hero {
         height: 100vh; /* has the background picture take up all the view port height*/
@@ -296,7 +297,7 @@ nav a:focus {
 
     /* move the SEE MY WORK button */
     .button-hero{
-        margin-top: 1.5rem; 
+        margin-top: 5rem; 
     }
 
     /* move the LINK TO GITHUB button */
@@ -375,8 +376,6 @@ nav a:focus {
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
     }
 
-
-
     .home-about-textbox h1 {
         top: .75em;
         left: 15rem; /* moves WHO AM I? text */
@@ -402,8 +401,8 @@ nav a:focus {
 .home-about-textbox-page h1 {
     color: #00ff6c;
     position: absolute;
-    left: 50%; /* when we are minimized, moves the "WHO AM I?" towards the middle of the page */
-    transform: translateX(-50%); /*helps move the far right side 50% */
+    left: 50%; /* moves the "About Me" towards the center */
+    transform: translateX(-50%); /*helps move the  green line to the middle */
     top: .75em;
     background: #232323;
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
@@ -423,7 +422,7 @@ nav a:focus {
 .home-about-textbox-page-2 h1 {
     color: #00ff6c;
     position: absolute;
-    left: 50%; /* when we are minimized, moves the "WHO AM I?" towards the middle of the page */
+    left: 50%; /* moves "PURPOSE OF WEBPAGE" towards the center */
     transform: translateX(-50%); /*helps move the far right side 50% */
     top: .75em;
     background: #232323;
@@ -455,6 +454,7 @@ nav a:focus {
     }
 }
 
+/* At full size ! */
 @media (min-width: 60rem) {
     h1 {
         font-size: 2.5rem;
@@ -480,24 +480,13 @@ nav a:focus {
         float: right;
     }
 
-
-    /* moves my ABOUT ME text */ 
-    .home-about-textbox-page h1 {
-        top: .75em;
-        left: 36.5rem; /* moves WHO AM I? text */
-        transform: translateX(0)
-    }
 }
-
-
-
-
 
 
 
 /* portfolio
 ***********************************************************************************************************************************/
-.portfolio { 
+.portfolio { /* moves "SOME OF MY WORK" */
     margin: 3em 0 0; /*3em for the top, 0 for left and right, and 0 for the bottom*/
 }
 
@@ -534,7 +523,7 @@ nav a:focus {
 
 @media (min-width: 60rem) {
     .port-item {
-        width: 33.33333334%;
+        width: 33.33333334%; /* so they align 3 pics */
         overflow: hidden;
     }
 
