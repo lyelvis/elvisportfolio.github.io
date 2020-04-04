@@ -1,3 +1,6 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
 body {
     /*
     font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +39,6 @@ img {
     width: 95%; /* a width suitable to the webpage size, does not exceed it otherwise it will wrap around.*/
     max-width: 75em; /* adjust the size of our container */
     margin: 0 auto; /* stops the text from touching the side of the screen */
-    overflow: hidden;
 }
 
 .clearfix::after,
@@ -129,7 +131,7 @@ p:last-of-type {
 ************************************************************************************************************************************/
 
 header {
-    position:  relative; /* overlays the header "Creative inc. and the nav ul links" over the picture*/ 
+    position:  absolute; /* overlays the header "Creative inc. and the nav ul links" over the picture*/ 
     left: 0; /* centers the header*/
     right: 0; /* center the header */
 }
@@ -173,7 +175,7 @@ nav a:focus {
 
     nav {
         float: right;
-        margin: 1rem;
+        margin: .95rem;
     }
 
     nav a { /* when we get to 60rem, webpage makes the font size bigger*/
@@ -222,25 +224,10 @@ nav a:focus {
 
 
 
-/* ShowCase
+
+
+/* Newsletter
 *****************************************************************************************/
-
-#showcase{
-    min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px; /* 0 is the x axis, -400px is the y axis */
-    text-align: center;
-    color: #ffffff;
-}
-
-#showcase h1{
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-#showcase p{
-    font-size: 20px;
-}
 
 #newsletter{
     padding: 15px;
@@ -250,6 +237,7 @@ nav a:focus {
 
 #newsletter h1{
     float: left;
+    color: #00ff6c
 }
 
 #newsletter form{
@@ -335,11 +323,6 @@ footer{
 *****************************************************************************************/
 /* only effects the screen when it is at this size or less */
 @media(max-width: 768px) { 
-    header #branding,
-    header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form,
     #boxes .box,
     article#main-col,
     aside#sidebar{
@@ -350,18 +333,9 @@ footer{
 
     header {
         padding-bottom: 20px;
-
     }
 
-    #showcase h1{
-        margin-top: 40px;
-    }
-
-    #newsletter button, .quote button{ /* keeps the subscirbe button at 100%*/
-        display: block;
-        width: 100%;
-    }
-
+   
     /* adjust the email box above the subscribe button */
     #newsletter form input[type="email"],
     .quote input, 

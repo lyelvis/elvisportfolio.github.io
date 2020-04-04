@@ -164,7 +164,7 @@ p:last-of-type {
 .button {
     display: inline-block; /* this fixes the button display so that it does NOT merge with the text around it*/
     font-size: 1.15rem;
-    text-decoration: none;
+    text-decoration: none; /*removes the under score*/
     text-transform: uppercase;
     border-width: 2px;
     border-style: solid;
@@ -207,14 +207,27 @@ p:last-of-type {
 }
 
  /* move the LINK TO GITHUB button */
- .button-github{
-    margin-top: 3rem;
+ .button-resume{
+    margin-top: 2.5rem;
+    background-color: DodgerBlue;
+    border: none;
+    text-decoration: none; /*removes the under score*/
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-resume:hover{
+    background-color: RoyalBlue;
 }
 
 /* move the SEE MY WORK button */
 .button-hero{
     margin-top: 3rem; 
 }
+
+
 
 
 
@@ -302,8 +315,8 @@ nav a:focus {
     }
 
     /* move the LINK TO GITHUB button */
-    .button-github{
-        margin-top: 5rem;
+    .button-resume{
+        margin-top: 3.5rem;
     }
 }
 
