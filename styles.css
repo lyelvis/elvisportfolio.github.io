@@ -126,8 +126,7 @@ p:last-of-type {
 
 .unstyled-list a { /* formats the link inside of our list at the bottom of the footer */
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1rem;
     color: #FFF;
 }
 
@@ -279,6 +278,7 @@ nav a:focus {
 
     nav {
         float: right;
+        margin-right: 2.5rem;
     }
 
     nav a { /* when we get to 60rem, webpage makes the font size bigger*/

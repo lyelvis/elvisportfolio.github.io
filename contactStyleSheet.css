@@ -222,6 +222,12 @@ nav a:focus {
 
 
 
+.page-title {
+    margin: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 
 
@@ -313,7 +319,7 @@ footer{
     padding: 20px;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #00ff6c;
     text-align: center;
 }
 
