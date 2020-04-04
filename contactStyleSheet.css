@@ -1,0 +1,373 @@
+body {
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5; */
+    /*below is the same as writing the portion above*/
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+
+}
+
+/* Global
+***********************************************************************************************************************/
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body   {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+
+/* adjust the sizing of SOME OF MY WORKS pictures */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%; /* a width suitable to the webpage size, does not exceed it otherwise it will wrap around.*/
+    max-width: 75em; /* adjust the size of our container */
+    margin: 0 auto; /* stops the text from touching the side of the screen */
+    overflow: hidden;
+}
+
+.clearfix::after,
+section::after, 
+footer::after {
+    content: '';
+    display: block; /* creates a block after footer section */
+    clear: both;
+}
+
+
+/* typography
+******************************************************************************************************************************/
+h1 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0; /* pushes the p tag down */ 
+    line-height: 1.5; /* line spacing */
+}
+
+p:last-of-type {
+    margin-bottom: 0; /* bottom paragraphs has no margins */
+}
+
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem; /* creates the space between the title and button beneath it */
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block; /* always on its on line. */
+    font-size: .9em;
+}
+
+.title-cta {
+    margin: 0 0 .5em;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.unstyled-list a { /* formats the link inside of our list at the bottom of the footer */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #FFF;
+}
+
+.unstyled-list li {
+    padding-bottom: 5px;
+}
+
+#unstyled-list-header { /* format the header of the list at the bottom of the page */
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+
+@media (min-width: 60rem){ /* when it reaches this rem, the attributes will change */
+   
+    p {
+       font-size: 1.2rem;
+       line-height: 1.6;
+   }
+   
+   
+    .title {
+        font-size: 3.7rem;
+    }
+
+    #unstyled-list-header {
+        font-size: 20px;
+    }
+}
+
+
+/* header
+************************************************************************************************************************************/
+
+header {
+    position:  relative; /* overlays the header "Creative inc. and the nav ul links" over the picture*/ 
+    left: 0; /* centers the header*/
+    right: 0; /* center the header */
+}
+
+nav ul { /* */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{ /* rearranges the link on the html site: home about contact, are all in a line*/
+    display: inline-block;
+    margin: 1em; /* margin betwen the links */
+}
+
+nav .current a{
+    color: #00ff6c;
+    font-weight:  bold;
+}
+
+nav a { /* sets up the clickable link */
+    font-weight: 900;
+    text-decoration: none; /* removes the underline on links */
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5rem;
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(35, 216, 19);
+}
+
+/* allows us to adjust the sizing of our pages when loaded on different sizing screens */
+@media (min-width: 60rem){ 
+    .logo {
+        float: left;
+        margin: 1rem;
+    }
+
+    nav {
+        float: right;
+        margin: 1rem;
+    }
+
+    nav a { /* when we get to 60rem, webpage makes the font size bigger*/
+        font-size: 1rem;
+    }
+
+    nav .current a{
+        color: #00ff6c;
+        font-weight:  bold;
+    }
+}
+
+
+
+/* home-hero
+*******************************************************************************************************************************/
+
+.home-hero {
+    background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0; /*10em top and bottom, 0 right and left */
+    color: #FFF;
+}
+
+/* at full size! */
+@media (min-width: 60rem) {
+    .home-hero {
+        height: 100vh; /* has the background picture take up all the view port height*/
+        padding-top: 25vh; /* pushes "MAKE THINGS LOOK GREAT" towards the bottom */
+    }
+
+    /* move the SEE MY WORK button */
+    .button-hero{
+        margin-top: 5rem; 
+    }
+
+    /* move the LINK TO GITHUB button */
+    .button-github{
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+
+
+/* ShowCase
+*****************************************************************************************/
+
+#showcase{
+    min-height: 400px;
+    background: url('../img/showcase.jpg') no-repeat 0 -400px; /* 0 is the x axis, -400px is the y axis */
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{ /* this adjust the email box */
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+/* Boxes
+*****************************************************************************************/
+
+#boxes{
+    margin-top: 20px;
+
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width:90px;
+
+}
+
+/* Sidebar
+*****************************************************************************************/
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+/* main-col
+*****************************************************************************************/
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+/* Services 
+*****************************************************************************************/
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+
+}
+
+
+
+/* Footer 
+*****************************************************************************************/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+
+/* Media Queries 
+*****************************************************************************************/
+/* only effects the screen when it is at this size or less */
+@media(max-width: 768px) { 
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button{ /* keeps the subscirbe button at 100%*/
+        display: block;
+        width: 100%;
+    }
+
+    /* adjust the email box above the subscribe button */
+    #newsletter form input[type="email"],
+    .quote input, 
+    .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

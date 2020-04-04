@@ -15,6 +15,7 @@ body   {
     text-align: center;
 }
 
+
 /* adjust the sizing of SOME OF MY WORKS pictures */
 img {
     max-width: 100%;
@@ -297,7 +298,7 @@ nav a:focus {
 
     /* move the SEE MY WORK button */
     .button-hero{
-        margin-top: 5rem; 
+        margin-top: 3rem; 
     }
 
     /* move the LINK TO GITHUB button */
