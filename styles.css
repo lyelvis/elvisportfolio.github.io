@@ -354,6 +354,7 @@ nav a:focus {
         top: 1em;
         padding: 0 .325em;
     }
+
 }
 
 
@@ -438,9 +439,10 @@ nav a:focus {
     position: absolute;
     left: 50%; /* moves "PURPOSE OF WEBPAGE" towards the center */
     transform: translateX(-50%); /*helps move the far right side 50% */
-    top: .75em;
+    top: .9em; /* moves it up and down */
     background: #232323;
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
+    white-space: nowrap; /* "purpose of webpage" does not break into new line*/
 }
 
 @media (min-width: 10rem) {
