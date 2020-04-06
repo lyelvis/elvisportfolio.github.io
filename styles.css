@@ -327,7 +327,7 @@ nav a:focus {
     background-color: #232323;
     padding: 5em; /* pads all sides of the about me content  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
-    margin-left: -2.5%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
+    margin-left: -2.6%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
     outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
     outline-offset: -2.5em; /* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
@@ -394,7 +394,7 @@ nav a:focus {
     .home-about-textbox h1 {
         top: .75em;
         left: 15rem; /* moves WHO AM I? text */
-        transform: translateX(0)
+        transform: translateX(-5rem);
     }
 }
 
