@@ -311,7 +311,7 @@ nav a:focus {
 
     /* move the SEE MY WORK button */
     .button-hero{
-        margin-top: 3rem; 
+        margin-top: 1rem; 
     }
 
     /* move the LINK TO GITHUB button */
@@ -376,9 +376,9 @@ nav a:focus {
     }
 
     .home-about { 
-        background-image: url(img/me3.jpg);
+        background-image: url(img/me4.jpeg);
         background-repeat: no-repeat;
-        padding-bottom: 25em; /* stretches the images towards the bottom */
+        padding-bottom: 20em; /* stretches the images towards the bottom */
     }
 
     .home-about-textbox {
