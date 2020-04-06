@@ -402,7 +402,7 @@ nav a:focus {
 
 /* home-about ABOUT PAGE
 ****************************************************************************************************************************/
-.home-about-textbox-page {
+.skill-set {
     background-color: #232323;
     padding: 5em; /* pads all sides of the home-about-textbox  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
@@ -413,7 +413,7 @@ nav a:focus {
     position: relative; /* positions the ENTIRE who am i text back where it is at */
 }
 
-.home-about-textbox-page h1 {
+.skill-set h1 {
     color: #00ff6c;
     position: absolute;
     left: 50%; /* moves the "About Me" towards the center */
@@ -423,7 +423,7 @@ nav a:focus {
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
 }
 
-.home-about-textbox-page-2 {
+.work-experience {
     background-color: #232323;
     padding: 5em; /* pads all sides of the home-about-textbox  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
@@ -434,7 +434,7 @@ nav a:focus {
     position: relative; /* positions the ENTIRE who am i text back where it is at */
 }
 
-.home-about-textbox-page-2 h1 {
+.work-experience h1 {
     color: #00ff6c;
     position: absolute;
     left: 50%; /* moves "PURPOSE OF WEBPAGE" towards the center */
@@ -451,7 +451,7 @@ nav a:focus {
         font-size: 1.5rem;
     }
 
-    .home-about-textbox-page h1 {
+    .skill-set h1 {
         top: 1em;
         padding: 0 .325em;
     }
@@ -464,7 +464,7 @@ nav a:focus {
         font-size: 1.75rem;
     }
 
-    .home-about-textbox-page h1 {
+    .skill-set h1 {
         top: .6em;
         padding: 0 .325em;
     }
@@ -476,7 +476,7 @@ nav a:focus {
         font-size: 2.5rem;
     }
 
-    .home-about-textbox-page {
+    .skill-set {
         width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         padding: 7em; /* padding between all sides */
         outline-offset: -3.75em; /* moves the green outline */
@@ -486,7 +486,7 @@ nav a:focus {
         float: right;
     }
 
-    .home-about-textbox-page-2 {
+    .work-experience {
         width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         padding: 7em; /* padding between all sides */
         outline-offset: -3.75em; /* moves the green outline */

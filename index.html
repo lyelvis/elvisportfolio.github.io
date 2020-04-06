@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elvis Portfolio</title>
+    <title>Elvis's Portfolio</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--add download button-->
 </head>
-<body> 
+
+
+
+<body>
+    
     <header>
         <!-- alt is alternative text for an image if the image cannot be displayed-->
-        <img src="img/elvislylogo.png" alt="Elvis Ly logo" class="logo"> 
+        <img src="img/indexlogo.png" alt="About Me Logo" class="logo"> 
         <nav>
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
@@ -18,38 +23,60 @@
         </nav>
     </header>
 
+
+    <!-- big header picture -->
     <section class="home-hero">
         <div class="container">
-            <h1 class="title">Making things looks great!
-                <span>want to view my github page?</span>
+            <h1 class="title">Hi there! Want to know more about me?
+                <span>You can download my resume here.</span>
             </h1>
-            <a href="https://github.com/lyelvis" class="button button-accent button-hero">Github Link</a>
+            <a href="https://www.dropbox.com/s/r4n89x45lnqnfks/Elvis%20Ly%20Resume%202020.pdf?dl=0" class="button button-accent button-resume"><i class="fa fa-download"></i> Download Resume</a>
         </div>
     </section>
 
 
+    <section class="home-about-page">
+        <div class="skill-set">
+            <h1>Skill Set</h1>
+            <p>Currently a undergraduate at George Mason University.
+                I am a hard worker, but I know that working hard does not always get you where you want to go.
+                You also have to be able to communicate well with others and work as a team to achieve great things.
+                Thankfully, having a big family and having college experience it has taught me to work well with others.
+                I look forward to the experience that I will get from working in the industry. It excites me that I 
+                will be graduating soon and a bigger and brighter future awaits.  
+            </p>
+        </div>
+    </section>
+    
+    <section class="home-about-page-2">
+        <div class="work-experience">
+            <h1>Work Experience</h1>
+            <p> Looking for a full time job in front end development. web developer. I am pretty new at web development. 
+                Taking on a new challenge. George Mason for odd reason does not teach web development as one of its 
+                core requirements, so on my free time I decide that I would learn it as I went along. I fell in love with
+                it, as it is different from programming in the backend. Seeing the design come along as you write makes things
+                a lot more satisfactory. 
+            </p>
+        </div>
+    </section>
 
-
-    <div class="container"> <!--should be a container bc the who we are is in the middle of the screen-->
-        <section class="home-about">
-            <div class="home-about-textbox">
-                <h1>Who Am I ?</h1>
-                <p>I am a <strong>George Mason graduate</strong> student that studied in the field of Computer Science. 
-                    Looking for a environment to further develop my skills and advance my career. 
-                    I work great in team environments and I am not afraid to try new things.
-                    If you want to know more about me you can click on the about me page at the top or find my listed skills at the bottom. 
-                </p>
-            </div>
-        </section>
-    </div>
-
-
-
+    <section class="home-about-page-3">
+        <div class="work-experience">
+            <h1>Education</h1>
+            <p> Looking for a full time job in front end development. web developer. I am pretty new at web development. 
+                Taking on a new challenge. George Mason for odd reason does not teach web development as one of its 
+                core requirements, so on my free time I decide that I would learn it as I went along. I fell in love with
+                it, as it is different from programming in the backend. Seeing the design come along as you write makes things
+                a lot more satisfactory. 
+            </p>
+        </div>
+    </section>
+    
 
     
     <section class="portfolio">
-        <h1>SOME OF MY WORK WEB DESIGNS</h1>
 
+        <h1>Web Design Projects</h1>
         <!-- portfolio item 1 -->
         <figure class="port-item">
             <img src="img/Screenshot 2020-03-21 15.15.55.png" alt="portfolio item">
@@ -72,7 +99,7 @@
         <figure class="port-item">
             <img src="img/adventuretourpage.JPG" alt="portfolio item">
             <figcaption class="port-desc"> <!--figcaption allows u to insert paragraph underneath pictures -->
-                <p>Adventure Tour Webpage</p>
+                <p>Project title</p>
                 <a href="https://lyelvis.github.io/toursweb.github.io/" class="button button-accent button-small">Project details</a>
             </figcaption>
         </figure>
@@ -112,9 +139,11 @@
             <h1 class="title title-cta">Like what you see?
                 <span>Then what are you waiting for?</span>
             </h1>
-            <a href="https://www.dropbox.com/s/r4n89x45lnqnfks/Elvis%20Ly%20Resume%202020.pdf?dl=0" class="button button-dark">Hire me</a>
+            <a href="" class="button button-dark">Hire me</a>
         </div>
     </section>
+
+
 
     <footer>
         <div class="container">
