@@ -291,6 +291,18 @@ nav a:focus {
     }
 }
 
+@media (min-width: 86rem) {
+    .logo {
+        float: left;
+        margin-left: 5rem;
+    }
+    nav a { /* when we get to 60rem, webpage makes the font size bigger*/
+        font-size: 1.5rem;
+    }
+}
+
+
+
 /* home-hero
 *******************************************************************************************************************************/
 
@@ -317,6 +329,28 @@ nav a:focus {
     /* move the LINK TO GITHUB button */
     .button-resume{
         margin-top: 3.5rem;
+    }
+}
+
+
+@media (min-width: 86rem) {
+    .home-hero {
+        height: 100vh; /* has the background picture take up all the view port height*/
+        padding-top: 25vh; /* pushes "MAKE THINGS LOOK GREAT" towards the bottom */
+    }
+
+    .home-hero h1{
+        font-size: 80px;
+    }
+
+    /* move the SEE MY WORK button */
+    .button-hero{
+        margin-top: 1rem; 
+    }
+
+    /* move the LINK TO GITHUB button */
+    .button-resume{
+        margin-top: 7rem;
     }
 }
 
