@@ -177,6 +177,7 @@ p:last-of-type {
     }
 }
 
+
 .button-small {
     font-size: .7rem;
     font-weight: 700;
@@ -307,7 +308,7 @@ nav a:focus {
 *******************************************************************************************************************************/
 
 .home-hero {
-    background-image: url(img/hero-bg.jpg);
+    background-image: url(img/webdesign.jpg);
     background-size: cover;
     background-position: center;
     padding: 10em 0; /*10em top and bottom, 0 right and left */
@@ -345,12 +346,14 @@ nav a:focus {
 
     /* move the SEE MY WORK button */
     .button-hero{
-        margin-top: 1rem; 
+        margin-top: 3rem;
+        font-size: 2rem;
     }
 
     /* move the LINK TO GITHUB button */
     .button-resume{
-        margin-top: 7rem;
+        margin-top: 6.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -412,11 +415,11 @@ nav a:focus {
     .home-about { 
         background-image: url(img/me4.jpeg);
         background-repeat: no-repeat;
-        padding-bottom: 20em; /* stretches the images towards the bottom */
+        padding-bottom: 0em; /* stretches the images towards the bottom */
     }
 
     .home-about-textbox {
-        width: 60%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        width: 50%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         padding: 7em; /* padding between all sides */
         outline-offset: -3.75em; /* moves the green outline */
         margin-left: -2.5%; /* moves out entire container towards the left */
@@ -426,49 +429,43 @@ nav a:focus {
     }
 
     .home-about-textbox h1 {
-        top: .75em;
-        left: 15rem; /* moves WHO AM I? text */
+        top: 1.2em;
+        left: 12.5rem; /* moves WHO AM I? text */
         transform: translateX(-5rem);
+        white-space:nowrap;
     }
 }
 
-
-
+@media (min-width: 86rem) {
+    .home-about-textbox h1 {
+        top: .75em;
+        left: 16rem; /* moves WHO AM I? text */
+        transform: translateX(-5rem);
+        white-space:nowrap;
+    }
+    .home-about-textbox{
+        width: 60%;
+        margin-left: -18%; /* moves out entire container towards the left */
+    }
+}
 /* home-about ABOUT PAGE
 ****************************************************************************************************************************/
-.skill-set {
+.experience {
     background-color: #232323;
     padding: 5em; /* pads all sides of the home-about-textbox  */
     width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
-    margin-left: 0%; /* bc of the space on the left size, we had to init margin-left to drag the home about text back to the left side */
-    outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
-    outline-offset: -2.5em; /* positions the square nearer towards the center */
-    color: #FFF; /* changes the color of the text inside of the WHO AM I box */
-    position: relative; /* positions the ENTIRE who am i text back where it is at */
-}
-
-.skill-set h1 {
-    color: #00ff6c;
-    position: absolute;
-    left: 50%; /* moves the "About Me" towards the center */
-    transform: translateX(-50%); /*helps move the  green line to the middle */
-    top: .75em;
-    background: #232323;
-    padding: 0 .145em; /* 0 top and bottom, .145em left and right */
-}
-
-.work-experience {
-    background-color: #232323;
-    padding: 5em; /* pads all sides of the home-about-textbox  */
-    width: 100vw; /* vw = viewport width, varies between the webpage size, will be 100% of the cainter width. */
+    height: 600px; /* manage black box height*/
     margin-left: 0%; /* move black box towards the right */
     outline: 2px solid #00ff6c; /* gives us the square about WHO AM I?*/
     outline-offset: -2.5em;/* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
 }
-
-.work-experience h1 {
+.ul-skill-set{
+    text-align: left;
+    font-size: 1.5em;
+}
+.experience h1 {
     color: #00ff6c;
     position: absolute;
     left: 50%; /* moves "PURPOSE OF WEBPAGE" towards the center */
@@ -478,58 +475,60 @@ nav a:focus {
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
     white-space: nowrap; /* "purpose of webpage" does not break into new line*/
 }
-
+/* If screen size is more than 10rem = 160px wide, set the font-size of <div> to 80px */
 @media (min-width: 10rem) {
 
     h1 {
         font-size: 1.5rem;
     }
 
-    .skill-set h1 {
-        top: 1em;
-        padding: 0 .325em;
-    }
 }
 
-
+/* If screen size is more than 25rem = 400px wide, set the font-size of <div> to 80px */
 @media (min-width: 25rem) {
-
     h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
-
-    .skill-set h1 {
-        top: .6em;
-        padding: 0 .325em;
+    .experience{
+        outline-offset: -2.9em;/* positions the square nearer towards the center */
     }
 }
 
-/* At full size ! */
-@media (min-width: 60rem) {
+/* If screen size is more than 70rem = 1120px wide, set the font-size of <div> to 80px */
+@media (min-width: 70rem) {
+    .experience h1 {
+        font-size: 2rem;
+    }
+    .experience {
+        font-size: .85rem;
+        width: 33.33333%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        height: 750px;
+        padding: 7em; /* padding between all sides */
+        outline-offset: -3.5em; /* moves the green outline */
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+        float: left;
+    }
+}
+
+
+
+/* If screen size is more than 90rem = 1440px wide, set the font-size of <div> to 80px */
+@media (min-width: 90rem) {
     h1 {
         font-size: 2.5rem;
     }
-
-    .skill-set {
-        width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+    .experience {
+        font-size: 1rem;
+        width: 33.33333%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
+        height: 750px;
         padding: 7em; /* padding between all sides */
-        outline-offset: -3.75em; /* moves the green outline */
+        outline-offset: -3em; /* moves the green outline */
         top: 0em; /* moves the entire "about me" text box towards the top*/
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
-        float: right;
+        float: left;
     }
-
-    .work-experience {
-        width: 100%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
-        padding: 7em; /* padding between all sides */
-        outline-offset: -3.75em; /* moves the green outline */
-        top: 0em; /* moves the entire "about me" text box towards the top*/
-        text-align: left;
-        box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
-        float: right;
-    }
-
 }
 
 
@@ -584,6 +583,14 @@ nav a:focus {
     .port-item:hover .port-desc {
         transform: translateY(0%);
     }
+}
+
+
+@media (min-width: 85rem) {
+    .port-item img{
+        width: 100%;
+    }
+
 }
 
 
