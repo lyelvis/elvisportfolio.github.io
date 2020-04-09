@@ -369,6 +369,7 @@ nav a:focus {
     outline-offset: -2.5em; /* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
+    
 }
 
 .home-about-textbox h1 {
@@ -379,6 +380,7 @@ nav a:focus {
     top: .75em;
     background: #232323;
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
+    white-space: nowrap;
 }
 
 @media (min-width: 10rem) {
