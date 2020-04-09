@@ -369,7 +369,6 @@ nav a:focus {
     outline-offset: -2.5em; /* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
-    
 }
 
 .home-about-textbox h1 {
@@ -462,6 +461,7 @@ nav a:focus {
     outline-offset: -2.5em;/* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
+    font-size: .9em;
 }
 .ul-skill-set{
     text-align: left;
