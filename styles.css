@@ -489,16 +489,35 @@ nav a:focus {
     h1 {
         font-size: 1.5rem;
     }
+    .experience h2,
+    .experience h3,
+    .experience p{
+        font-size: 1rem;
+    }
+
+    .experience ul{
+        font-size: 1.5rem;
+    }
 
 }
 
 /* If screen size is more than 25rem = 400px wide, set the font-size of <div> to 80px */
-@media (min-width: 25rem) {
+@media (min-width: 35rem) {
     h1 {
         font-size: 2rem;
     }
     .experience{
         outline-offset: -2.9em;/* positions the square nearer towards the center */
+    }
+
+    .experience h2,
+    .experience h3,
+    .experience p{
+        font-size: 1.5rem;
+    }
+
+    .experience ul{
+        font-size: 1.5rem;
     }
 }
 
@@ -508,21 +527,28 @@ nav a:focus {
         font-size: 2rem;
     }
     .experience {
-        font-size: .92rem;
+        font-size: .5rem;
         width: 33.33333%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         height: 750px;
         padding: 7em; /* padding between all sides */
-        outline-offset: -3.5em; /* moves the green outline */
+        outline-offset: -5.7em; /* moves the green outline */
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
         float: left;
+    }
+    .experience h2,
+    .experience h3{
+        font-size: 1.3rem;
+    }
+    #top{
+        margin-top: 1.5em;
     }
 }
 
 
 
 /* If screen size is more than 90rem = 1440px wide, set the font-size of <div> to 80px */
-@media (min-width: 90rem) {
+@media (min-width: 95rem) {
     h1 {
         font-size: 2.5rem;
     }
@@ -536,6 +562,13 @@ nav a:focus {
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
         float: left;
+    }
+    .experience h2,
+    .experience h3{
+        font-size: 1.5rem;
+    }
+    #top{
+        margin-top: 0;
     }
 
 }
