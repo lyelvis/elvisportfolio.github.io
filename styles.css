@@ -322,12 +322,12 @@ nav a:focus {
         padding-top: 25vh; /* pushes "MAKE THINGS LOOK GREAT" towards the bottom */
     }
 
-    /* move the SEE MY WORK button */
+    /* move the GITHUB button */
     .button-hero{
-        margin-top: 1rem; 
+        margin-top: 4rem; 
     }
 
-    /* move the LINK TO GITHUB button */
+    /* move the LINK TO RESUME button */
     .button-resume{
         margin-top: 3.5rem;
     }
@@ -461,7 +461,6 @@ nav a:focus {
     outline-offset: -2.5em;/* positions the square nearer towards the center */
     color: #FFF; /* changes the color of the text inside of the WHO AM I box */
     position: relative; /* positions the ENTIRE who am i text back where it is at */
-    font-size: .9em;
 }
 .ul-skill-set{
     text-align: left;
@@ -476,6 +475,13 @@ nav a:focus {
     background: #232323;
     padding: 0 .145em; /* 0 top and bottom, .145em left and right */
     white-space: nowrap; /* "purpose of webpage" does not break into new line*/
+}
+.experience h2,
+.experience h3,
+.experience p{
+    font-size: 1.25em;
+    padding: none;
+    margin: 8px;
 }
 /* If screen size is more than 10rem = 160px wide, set the font-size of <div> to 80px */
 @media (min-width: 10rem) {
@@ -502,7 +508,7 @@ nav a:focus {
         font-size: 2rem;
     }
     .experience {
-        font-size: .85rem;
+        font-size: .92rem;
         width: 33.33333%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         height: 750px;
         padding: 7em; /* padding between all sides */
@@ -521,7 +527,7 @@ nav a:focus {
         font-size: 2.5rem;
     }
     .experience {
-        font-size: 1rem;
+        font-size: 1.03rem;
         width: 33.33333%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         height: 750px;
         padding: 7em; /* padding between all sides */
@@ -531,6 +537,7 @@ nav a:focus {
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
         float: left;
     }
+
 }
 
 
