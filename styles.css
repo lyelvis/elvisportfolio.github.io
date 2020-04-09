@@ -404,7 +404,7 @@ nav a:focus {
     }
 }
 /* width size 960  */
-@media (min-width: 65rem) {
+@media (min-width: 75rem) {
     h1 {
         font-size: 2.5rem;
     }
@@ -416,17 +416,18 @@ nav a:focus {
     .home-about-textbox {
         width: 50%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         padding: 7em; /* padding between all sides */
-        outline-offset: -3.75em; /* moves the green outline */
+        outline-offset: -3em; /* moves the green outline */
         margin-left: -2.5%; /* moves out entire container towards the left */
         top: -5em; /* moves the WHO AM I text box towards the top*/
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+        transform: translateY(1rem);
     }
 
     .home-about-textbox h1 {
         font-size: 2.5rem;
-        top: 1.0em;
-        left: 10.5rem; /* moves WHO AM I? text */
+        top: 1.0rem;
+        left: 12rem; /* moves WHO AM I? text */
         transform: translateX(-5rem);
         white-space:nowrap;
     }
@@ -435,26 +436,28 @@ nav a:focus {
 @media (min-width: 86rem) {
     .home-about-textbox h1 {
         font-size: 2.8em;
-        top: .75em;
+        top: .9rem;
         left: 16rem; /* moves WHO AM I? text */
         transform: translateX(-5rem);
         white-space:nowrap;
     }
     .home-about-textbox{
         width: 60%;
+        outline-offset: -3em; /* moves the green outline */
         margin-left: -12%; /* moves out entire container towards the left */
     }
 }
 /* 1504 width size */
 @media (min-width: 94rem){
     .home-about-textbox h1 {
-        top: .75em;
+        top: .9rem;
         left: 16rem; /* moves WHO AM I? text */
         transform: translateX(-5rem);
         white-space:nowrap;
     }
     .home-about-textbox{
         width: 60%;
+        outline-offset: -3em; /* moves the green outline */
         margin-left: -18%; /* moves out entire container towards the left */
     }
 }
