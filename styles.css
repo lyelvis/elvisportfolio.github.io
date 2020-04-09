@@ -392,33 +392,27 @@ nav a:focus {
         top: 1em;
         padding: 0 .325em;
     }
-
 }
 
-
 @media (min-width: 25rem) {
-
     h1 {
         font-size: 1.75rem;
     }
-
     .home-about-textbox h1 {
         top: .6em;
         padding: 0 .325em;
     }
 }
-
-@media (min-width: 60rem) {
+/* width size 960  */
+@media (min-width: 65rem) {
     h1 {
         font-size: 2.5rem;
     }
-
     .home-about { 
         background-image: url(img/me4.jpeg);
         background-repeat: no-repeat;
         padding-bottom: 0em; /* stretches the images towards the bottom */
     }
-
     .home-about-textbox {
         width: 50%; /* adjust the width compared to the conainter width we set. so 60% of 95%*/
         padding: 7em; /* padding between all sides */
@@ -430,14 +424,29 @@ nav a:focus {
     }
 
     .home-about-textbox h1 {
-        top: 1.2em;
-        left: 12.5rem; /* moves WHO AM I? text */
+        font-size: 2.5rem;
+        top: 1.0em;
+        left: 10.5rem; /* moves WHO AM I? text */
         transform: translateX(-5rem);
         white-space:nowrap;
     }
 }
-
+/* 1376 width size  */
 @media (min-width: 86rem) {
+    .home-about-textbox h1 {
+        font-size: 2.8em;
+        top: .75em;
+        left: 16rem; /* moves WHO AM I? text */
+        transform: translateX(-5rem);
+        white-space:nowrap;
+    }
+    .home-about-textbox{
+        width: 60%;
+        margin-left: -12%; /* moves out entire container towards the left */
+    }
+}
+/* 1504 width size */
+@media (min-width: 94rem){
     .home-about-textbox h1 {
         top: .75em;
         left: 16rem; /* moves WHO AM I? text */
