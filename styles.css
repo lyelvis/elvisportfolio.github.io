@@ -324,7 +324,7 @@ nav a:focus {
 
     /* move the GITHUB button */
     .button-hero{
-        margin-top: 4rem; 
+        margin-top: 1rem; 
     }
 
     /* move the LINK TO RESUME button */
@@ -403,8 +403,9 @@ nav a:focus {
         padding: 0 .325em;
     }
 }
-/* width size 960  */
-@media (min-width: 75rem) {
+
+/* If screen size is more than 960 px wide and 600 px height , set style */
+@media (min-width: 75rem) and (min-height: 37rem) {
     h1 {
         font-size: 2.5rem;
     }
@@ -432,7 +433,7 @@ nav a:focus {
         white-space:nowrap;
     }
 }
-/* 1376 width size  */
+/* If screen size is more than 1376 px wide, set style */
 @media (min-width: 86rem) {
     .home-about-textbox h1 {
         font-size: 2.8em;
@@ -447,7 +448,7 @@ nav a:focus {
         margin-left: -12%; /* moves out entire container towards the left */
     }
 }
-/* 1504 width size */
+/* If screen size is more than 1504 px wide, set style */
 @media (min-width: 94rem){
     .home-about-textbox h1 {
         top: .9rem;
