@@ -549,9 +549,11 @@ nav a:focus {
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
         float: left;
     }
-    .experience h2,
-    .experience h3{
+    .experience h2{
         font-size: 1.3rem;
+    }
+    .experience h3{
+        font-size: 1.1rem;
     }
     #top{
         margin-top: 1.5em;
@@ -576,9 +578,11 @@ nav a:focus {
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
         float: left;
     }
-    .experience h2,
-    .experience h3{
+    .experience h2{
         font-size: 1.5rem;
+    }
+    .experience h3{
+        font-size: 1rem;
     }
     #top{
         margin-top: 0;
